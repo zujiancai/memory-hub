@@ -1,0 +1,34 @@
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+.venv/
+venv/
+.env
+.env.local
+*.egg-info/
+build/
+dist/
+
+# SQLite / dev DBs
+*.db
+*.db-journal
+app.db
+app.sqlite
+instance/
+
+# Pytest / coverage
+.pytest_cache/
+.coverage
+htmlcov/
+coverage.xml
+
+# Local blob store (fake blob storage backing dev)
+blobstore/
+
+# IDE
+.idea/
+.vscode/
+
+# UI build lives in server/ui/ — its own .gitignore

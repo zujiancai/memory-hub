@@ -1,0 +1,7 @@
+[tool.pytest.ini_options]
+testpaths = ["test"]
+addopts = "-q --cov=server --cov-report=term-missing --cov-config=.coveragerc"
+pythonpath = ["server"]
+filterwarnings = [
+  "ignore::DeprecationWarning",
+]

@@ -1,0 +1,13 @@
+[run]
+branch = False
+source = server/server
+omit =
+    server/server/oauth_google.py
+    server/migrations/*
+    server/server/worker.py
+
+[report]
+exclude_lines =
+    pragma: no cover
+    raise NotImplementedError
+    if __name__ == .__main__.:
